@@ -26,7 +26,7 @@ export default function Header() {
                 You are not signed in
               </span>
               <a
-                href={`/api/auth/signin`}
+                href={`/api/foobar/auth/signin`}
                 className={styles.buttonPrimary}
                 onClick={(e) => {
                   e.preventDefault()
@@ -51,7 +51,7 @@ export default function Header() {
                 <strong>{session.user.email ?? session.user.name}</strong>
               </span>
               <a
-                href={`/api/auth/signout`}
+                href={`/api/foobar/auth/signout`}
                 className={styles.button}
                 onClick={(e) => {
                   e.preventDefault()
